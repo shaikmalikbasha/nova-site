@@ -1,7 +1,7 @@
 <header id="header" class="fixed-top header-transparent">
       <div class="container">
         <div class="logo float-left">
-          <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+          <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
         </div>
         <nav class="nav-menu float-right d-none d-lg-block">
           <ul>
