@@ -28,11 +28,12 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              45 / 407, 1st Floor,<br />
+              Ashok Nagar,<br />
+              Kurnool - 518001.<br /><br />
+              <strong>Phone 1:</strong> +91 9705 925 174<br>
+              <strong>Phone 2:</strong> +91 9515 955 097<br>
+              <!-- <strong>Email:</strong> info@example.com<br> -->
             </p>
 
           </div>
