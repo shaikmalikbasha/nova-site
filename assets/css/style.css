@@ -1,59 +1,30 @@
-/* Minimal Custom CSS for Theme Toggle and background */
-:root {
-  --background-color: #ffffff;
-  --text-color: #212121;
-  --navbar-bg-light: #ffffff;
-  --navbar-link-light: rgba(0, 0, 0, 0.87);
-}
-.dark-theme {
-  --background-color: #212121; /* Dark Gray background */
-  --text-color: #e0e0e0; /* Light Gray text */
-  --navbar-bg-dark: #2a2a2a; /* Slightly darker navbar */
-  --navbar-link-dark: #e0e0e0;
-}
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* ----------------------- FIX 1: DARK THEME NAVBAR ----------------------- */
-/* Target the nav and side-nav background and links */
-.dark-theme .navbar-fixed nav,
-.dark-theme .sidenav {
-  background-color: var(--navbar-bg-dark) !important;
-}
-
-.dark-theme .navbar-fixed .nav-wrapper a,
-.dark-theme .sidenav a,
-.dark-theme .sidenav a i,
-.dark-theme .navbar-fixed .nav-wrapper a i {
-  color: var(--navbar-link-dark) !important;
-}
-
-/* Overriding specific Materialize elements for dark mode visibility */
-.dark-theme .card {
-  background-color: #333333;
-}
-.dark-theme h1,
-.dark-theme h2,
-.dark-theme h3 {
-  color: var(--text-color);
-}
-/* ------------------------------------------------------------------------- */
-
 /* Hero Section Styling */
-.hero-section {
-  /* padding: 80px 0; */
-  /* min-height: 85vh; */
+/* .hero-section {
+  padding: 80px 0;
+  min-height: 85vh;
   display: flex;
   align-items: center;
+} */
+
+/* Floating WhatsApp Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+}
+
+.tech-chip {
+  margin: 5px;
+  font-size: 14px;
 }
 
 #home,
 #services,
 #how-it-works,
 #training,
+#leadership,
+#technologies,
 #contact {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 60px;
 }
