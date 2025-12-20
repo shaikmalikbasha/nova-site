@@ -45,8 +45,12 @@ function loadTags() {
   fetch(icons_url)
     .then((response) => response.text())
     .then((data) => {
+      console.log("Icons loaded successfully");
       document.getElementById("icons-list").innerHTML = data;
       document.getElementById("icons-list-repeat").innerHTML = data;
+    })
+    .catch((error) => {
+      console.error("Error loading icons:", error);
     });
 }
 
