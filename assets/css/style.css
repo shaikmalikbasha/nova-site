@@ -28,3 +28,57 @@
 #contact {
   scroll-margin-top: 60px;
 }
+
+.code-icon {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px;
+  flex-shrink: 0;
+}
+.icon-marquee {
+  overflow: hidden;
+  width: 100%;
+  /* Prevents mobile blue highlight tap effect */
+  -webkit-tap-highlight-color: transparent;
+}
+.icon-track {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: max-content;
+  animation: scroll-code-icon 12s linear infinite;
+}
+.icon-marquee:active .icon-track {
+  animation-play-state: paused;
+}
+
+@media (hover: hover) {
+  .icon-marquee:hover .icon-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-code-icon {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .code-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px;
+  }
+  .tech-chip {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
